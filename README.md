@@ -106,3 +106,50 @@ Windows Registry Editor Version 5.00
 <b>It'll give a warning, just ignore and click yes.</b><br>
 <b>You're done.</b>
 </details>
+
+
+<details>
+<summary><b>5: Unsubscribe from All YouTube Channels</b></summary><br>
+
+<b>STEPS<b>
+
+- Go to [YouTube Subscribed Channel List](https://www.youtube.com/feed/channels)
+- Right Click and select Inspect Element.
+- Go to Console and Paste the contents of youtube-unsubscriber.js listed below in the console and press Enter.
+- The script will execute and it will sequentially unsubscribe you from all the channels you have subscribed to.
+<hr>
+
+<x> beginning of youtube-unsubscriber.js </x>
+
+<pre>
+var i = 0;
+var c = document.querySelectorAll("ytd-channel-renderer:not(.ytd-item-section-renderer)").length;
+
+L1N3();
+
+function uzmanimNet () {    
+    if (c == 0) return;
+
+    el = document.querySelector('.ytd-subscribe-button-renderer');
+    el.click();
+
+    setTimeout(function () {
+        var unSubBtn = document.getElementById("confirm-button").click();
+        i++;
+        c--;
+
+        console.log(i + " Unsubscribed.(L1N3)");
+        console.log(c + " left.");
+
+        setTimeout(function () {
+            el = document.querySelector("ytd-channel-renderer");
+            el.parentNode.removeChild(el);
+
+            L1N3();
+        }, 250);
+    }, 250);
+}
+</pre>
+
+
+</details>
