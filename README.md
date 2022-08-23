@@ -90,7 +90,7 @@ The following policy JSON file has to be saved in the installation directory of 
 <b>Copy and paste the below code into the reg file</b>
 <hr> 
 
-```
+<pre>
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
@@ -100,7 +100,7 @@ Windows Registry Editor Version 5.00
 "DisableBehaviorMonitoring"=dword:00000001
 "DisableOnAccessProtection"=dword:00000001
 "DisableScanOnRealtimeEnable"=dword:00000001
-```
+</pre>
 <hr>
 <b>Save the File and double click on it.</b><br>
 <b>It'll give a warning, just ignore and click yes.</b><br>
