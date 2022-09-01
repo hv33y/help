@@ -83,7 +83,7 @@ The following policy JSON file has to be saved in the installation directory of 
 
 <a href="./windefender_disable.reg">windefender_disable.reg</a>
 
-```OR```
+<pre>OR</pre>
 Open notepad and make a rename file name as <code>disable.win.def.reg</code><br>
 Copy and paste the below code into the reg file
 <hr> 
