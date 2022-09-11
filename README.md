@@ -256,3 +256,13 @@ Version 21H2
 <code>Version 21H2</code>
 </details>
 
+
+<details>
+<summary><b>8. Rclone Config</b></summary>
+<pre>
+rclone mount (Config Name):/ (Drive Letter Name): --allow-other --cache-db-purge --allow-non-empty --buffer-size 256M --cache-chunk-path C:\Users\(USER)\.config\rcloneCache --cache-dir C:\Users\(USER)\.config\rclone --dir-cache-time 24h --drive-chunk-size 32M  --timeout 1h  --vfs-cache-mode minimal --vfs-read-chunk-size 128M --vfs-read-chunk-size-limit 1G --network-mode --daemon
+<br>
+<b>Use --daemon if vps is linux</b>
+</pre>
+</details>
+
