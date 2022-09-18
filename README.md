@@ -270,3 +270,22 @@ rclone mount Kekk:/ A: --cache-db-purge --buffer-size 256M --cache-chunk-path C:
 </pre>
 </details>
 
+<details>
+<summary><b>9. Ngrok Multi Port Expose</b></summary>
+<pre>
+<b>Make a config file named as ngrok.yml</b>
+<br>
+version: "2"
+authtoken: {YOUR_NGROK_AUTH_TOKEN}
+
+tunnels:
+  aria2c_main:
+    addr: 6800
+    proto: http
+  aria2c_web:
+    addr: 8888
+    proto: http
+<br>
+<b>Open CMD and type</b> <i>ngrok start --all --config {PATH_OF_CONFIG}</i>
+</pre>
+</details>
