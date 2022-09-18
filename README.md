@@ -266,7 +266,7 @@ rclone mount (Config Name):/ (Drive Letter Name): --allow-other --cache-db-purge
 </pre>
 <i>Personal Config</i>
 <pre>
-rclone mount Kekk:/ A: --allow-other --cache-db-purge --allow-non-empty --buffer-size 256M --cache-chunk-path C:\rclone\cache --cache-dir C:\rclone\rclone --dir-cache-time 1h --drive-chunk-size 32M  --timeout 1h --vfs-cache-mode full --vfs-read-chunk-size 128M --vfs-read-chunk-size-limit 10G --network-mode 
+rclone mount Kekk:/ A: --cache-db-purge --buffer-size 256M --cache-chunk-path C:\rclone\cache --cache-dir C:\rclone\rclone --dir-cache-time 1h --drive-chunk-size 32M  --timeout 1h --vfs-cache-mode full --vfs-read-chunk-size 128M --vfs-read-chunk-size-limit 10G --network-mode 
 </pre>
 </details>
 
